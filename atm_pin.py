@@ -1,0 +1,12 @@
+for i in range(3):
+     currentpassword=int(input())
+     if currentpassword==actualpassword:
+        print("successfully logged in ")
+        break 
+     else:
+        if attempts==1:
+            print("your acc is blocked try after 24 hrs")
+        else:
+            print("incorrect you are left with",attempts,"attempts") 
+     attempts-=1             
+           
